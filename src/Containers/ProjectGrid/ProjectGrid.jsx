@@ -9,6 +9,7 @@ const ProjectGrid = () => {
       {projects.map(item => (
         
         <ProjectCard
+            key={item.id}
             image={item.thmbnail}
             title={item.title}
             
