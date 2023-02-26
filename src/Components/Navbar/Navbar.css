@@ -1,0 +1,15 @@
+nav{
+    width: 100vw;
+    padding: 2vh 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: .5px solid #000;
+    position: fixed;
+    z-index: 999;
+}
+nav h2{
+    font-weight: 900;
+    font-size: clamp(1.2rem, 1.4vw, 5rem);
+    text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+.project-container{
+    width: 100vw;
+    min-height: 60vh;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+@media screen and (max-width:800px) {
+    .project-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:500px) {
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,28 @@
+.project-card{
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.card-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+.card-overlay h1{
+    font-weight: 300;
+    font-size: clamp(1.2rem, 1.4vw, 4rem);
+    text-transform: uppercase;
+}
+.project-card:hover .card-overlay{
+    opacity: 1;
+}
