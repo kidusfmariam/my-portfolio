@@ -12,6 +12,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/contact" element={<Contact/>}/>
+              <Route exact path='/:projectTitle' element={<ProjectDetail/>}></Route>
             </Routes>
         </Router>
       </>

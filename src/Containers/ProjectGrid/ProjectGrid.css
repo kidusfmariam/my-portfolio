@@ -1,9 +1,10 @@
 .project-container{
     width: 100vw;
-    min-height: 60vh;
+    min-height: 50vh;
     max-height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: none;
 
 }
 @media screen and (max-width:800px) {
