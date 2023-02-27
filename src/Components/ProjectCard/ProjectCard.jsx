@@ -7,7 +7,7 @@ const ProjectCard = ({image, title, id}) => {
     <Link style={{textDecoration: 'none'}} to={`/${title}`}>
     <motion.div 
       initial={{opacity: 0}}
-      whileInView={{opacity: 1}}
+      animate={{opacity: 1}}
       viewport={{once: true}}
       transition={{duration: 1, delay: id/10 + 1.4}}
     className='project-card'>
