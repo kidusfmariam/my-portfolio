@@ -1,12 +1,27 @@
 import React from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 const Navbar = () => {
   return (
-    <nav>
-      <Link style={{textDecoration: 'none'}} to='/'><h2>K.A</h2></Link>
-      <Link style={{textDecoration: 'none'}} to='/contact'><h2>Contact Me</h2></Link>
-    </nav>
+    <motion.nav
+      initial={{width: 0}}
+      whileInView={{width: '100%'}}
+      transition={{duration: .5, delay: 0.2}}
+    >
+      <Link style={{textDecoration: 'none'}} to='/'>
+      <motion.h2
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 1.4, delay: 1.4}}
+      >K.A</motion.h2></Link>
+      <Link style={{textDecoration: 'none'}} to='/contact'>
+      <motion.h2
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 1.2, delay: 1.4}}
+      >Contact Me</motion.h2></Link>
+    </motion.nav>
   )
 }
 
