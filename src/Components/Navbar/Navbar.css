@@ -12,4 +12,5 @@ nav h2{
     font-weight: 900;
     font-size: clamp(1.2rem, 1.4vw, 5rem);
     text-transform: uppercase;
+    color: #000;
 }
