@@ -1,28 +1,44 @@
 import './Contact.css'
 import {AiOutlineMail, AiOutlineGithub, AiOutlineTwitter, AiOutlineLinkedin} from 'react-icons/ai'
 import {FaTelegramPlane} from 'react-icons/fa'
+import {motion} from 'framer-motion'
 const Contact = () => {
   return (
     <div className='contact-container'>
         <div className='contact-wrapper'>
-            <h1>Contact Me</h1>
-            <a href="mailto:kidusfmariamayalew@gmail.com" target='_blank'>
+            <motion.h1
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              viewport={{once: true}}
+              transition={{duration: 1.2, delay: 0.4}}
+            >Contact Me</motion.h1>
+            <motion.a 
+              initial={{opacity: 0}}
+              whileInView={{opacity: 1}}
+              viewport={{once: true}}
+              transition={{duration: 1.2, delay: 0.6}}
+            href="mailto:kidusfmariamayalew@gmail.com" target='_blank'>
               <p className='email'>kidusfmariamayalew@gmail.com</p>
-            </a>
-            <div className='socials'>
+            </motion.a>
+            <motion.div 
+                 initial={{opacity: 0}}
+                 whileInView={{opacity: 1}}
+                 viewport={{once: true}}
+                 transition={{duration: 1.2, delay: 0.9}}
+            className='socials'>
               <a href="https://t.me/wanderingsailboat" target='_blank'>
                 <FaTelegramPlane/>
               </a>
               <a href="https://github.com/kidusfmariam" target='_blank'>
                 <AiOutlineGithub/>
               </a>
-              <a href="#" target='_blank'>
+              <a href="https://twitter.com/iwantdisfish" target='_blank'>
                 <AiOutlineTwitter/>
               </a>
               <a href="#" target='_blank'>
                 <AiOutlineLinkedin/>
               </a>
-            </div>
+            </motion.div>
         </div>
     </div>
   )
