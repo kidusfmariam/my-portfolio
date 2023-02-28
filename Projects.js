@@ -44,7 +44,7 @@ const projects = [
         title: 'Ruma.',
         tools: ['React', 'CSS', 'Framer Motion'],
         description: 'This is a website made for a fictitious art gallery called RUMA. Ruma is an art gallery located in the historic city of Chicago, IL. For years, we have been collecting, curating, and displaying various works of artists from all over the world. We believe in making art free and accessible to the masses.',
-        link: '#',
+        link: 'https://ruma-gallery.vercel.app/',
         github: 'https://github.com/kidusfmariam/gallery-website',
         thmbnail: '/PORTFOLIO/Ruma/thumbnail.png',
         screenshot1: '/PORTFOLIO/Ruma/capture-1.png'
