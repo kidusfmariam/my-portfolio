@@ -18,8 +18,7 @@ const Hero = () => {
       <motion.div
         initial={{height: 0}}
         animate={{height: '100%'}}
-        viewport={{once: true}}
-        transition={{duration: 0.5, delay: 0.2}}
+        transition={{duration: 1.2, ease:'easeInOut'}}
       className='hero-right'>
             <motion.p
               initial={{opacity: 0}}

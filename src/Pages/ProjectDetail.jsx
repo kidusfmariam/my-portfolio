@@ -56,7 +56,7 @@ const ProjectDetail = () => {
           initial={{y: 150}}
           animate={{y: 0}}
           viewport={{once: true}}
-          transition={{duration: 1.2, delay: .9}}
+          transition={{duration: 1.2, ease: 'easeInOut'}}
 
         className='project-img'>
             <img src={thisProject.screenshot1} alt={thisProject.title} />
