@@ -8,6 +8,7 @@ const Navbar = () => {
       initial={{width: 0}}
       whileInView={{width: '100%'}}
       transition={{duration: 1.2, ease: 'easeInOut'}}
+      viewport={{once: true}}
     >
       <Link style={{textDecoration: 'none'}} to='/'>
       <motion.h2
