@@ -15,12 +15,14 @@ const Navbar = () => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.4, delay: 1.4}}
+        viewport={{once: true}}
       >K.A</motion.h2></Link>
       <Link style={{textDecoration: 'none'}} to='/contact'>
       <motion.h2
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1.2, delay: 1.4}}
+        viewport={{once: true}}
       >Contact Me</motion.h2></Link>
     </motion.nav>
   )
